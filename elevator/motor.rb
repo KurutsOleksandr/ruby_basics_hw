@@ -3,12 +3,13 @@ class Motors
     
     def motors(people)
         if people >= 3 then
-            motor_2 = true
-            puts "Motor 2 ON"
+            motor_2 = "ON"
         else
-            motor_2 = false
-            puts "motor 2 OFF"
+            motor_2 = "OFF"
         end
+        display_outside = Display_outside.new
+        display_outside.display_motor(motor_2)
+        
     end
     
 end
